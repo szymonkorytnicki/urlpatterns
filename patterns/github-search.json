@@ -1,0 +1,7 @@
+{
+  "title": "Search all GitHub",
+  "url": "https://github.com/search?q={query}",
+  "description": "Search all GitHub for a query",
+  "tags": ["github", "productivity", "code"],
+  "product": "github"
+}
