@@ -347,3 +347,20 @@ template {
 [hidden] {
   display: none;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background: rgba(158, 166, 255, 0.841);
+}

@@ -1,0 +1,27 @@
+.title {
+    text-align: center;
+    font-family: Righteous;
+    font-size: 40px;
+}
+
+.subtitle {
+    font-family: Roboto;
+}
+
+.patterns {
+    display: grid;
+    gap: 20px;
+}
+
+.patternBox {
+    border-radius: 20px;
+    background: #d7a0f8;
+    display: block;
+}
+
+.search {
+    font-family: Righteous;
+    font-size: 30px;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
