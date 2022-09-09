@@ -60,13 +60,6 @@ export default function Home({ patterns }) {
               </div>
             );
           })}
-          {foundPatterns.slice(0, 50).map((pattern) => {
-            return (
-              <div className={styles.patternBox} key={pattern.id}>
-                <Link href={`/pattern/${pattern.id}`}>{pattern.title}</Link>
-              </div>
-            );
-          })}
         </div>
       </div>
     </>

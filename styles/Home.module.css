@@ -68,3 +68,16 @@
     left: 1rem;
     cursor: pointer;
 }
+
+.urlpatternInput {
+    width: 100%;
+    background: white;
+    border: 10px solid #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: monospace
+}
+.urlpatternInput:focus {
+    outline: none;
+    border-color: #f8f8f8;
+}

@@ -27,7 +27,7 @@ export default function Pattern({ title, id, tags, url, description }) {
 function URLPattern({ url }) {
   return (
     <div styles={styles.urlpattern}>
-      <input type="text" value={url} readOnly />
+      <input type="text" value={url} readOnly className={styles.urlpatternInput} />
     </div>
   );
 }
