@@ -352,6 +352,7 @@ template {
 }
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 2rem;
 }
 
 .wrapper {
@@ -363,4 +364,5 @@ body {
 
 .header {
   background: rgba(158, 166, 255, 0.841);
+  min-height: 250px;
 }

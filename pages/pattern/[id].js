@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { getAllPatterns } from "../../getAllPatterns";
+import styles from "../../styles/Home.module.css";
+import Link from "next/link";
 export default function Pattern({ title, id, tags, url, description }) {
   return (
     <div>
@@ -8,10 +10,33 @@ export default function Pattern({ title, id, tags, url, description }) {
         <meta name="description" content="URL Patterns" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>{title}</h1>
-      <h2>{description}</h2>
-      <div>{url}</div>
+      <header className="header">
+        <GoBackButton />
+        <div className="wrapper">
+          <h1 className={styles.title}>{title}</h1>
+          <URLPattern url={url} />
+        </div>
+      </header>
+      <div className="wrapper">
+        <p>{description}</p>
+      </div>
     </div>
+  );
+}
+
+function URLPattern({ url }) {
+  return (
+    <div styles={styles.urlpattern}>
+      <input type="text" value={url} readOnly />
+    </div>
+  );
+}
+
+function GoBackButton() {
+  return (
+    <Link href="/">
+      <div className={styles.goBack}>Go back</div>
+    </Link>
   );
 }
 

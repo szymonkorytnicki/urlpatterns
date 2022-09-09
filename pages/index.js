@@ -1,26 +1,36 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { getAllPatterns } from "../getAllPatterns";
-import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { debounce } from "../utils/debounce";
+import { useEffect, useMemo, useState } from "react";
 export default function Home({ patterns }) {
-  const router = useRouter();
+  const { query, push } = useRouter();
+  const [value, setValue] = useState();
 
-  function onSubmit(event) {
-    event.preventDefault();
+  useEffect(() => {
+    setValue(query?.search || "");
+  }, [query]);
 
-    const url = new URL(window.location);
-    url.searchParams.set("search", event.target[0].value);
-
-    router.push(url);
+  function onInput(event) {
+    const url = new URL(window.location.href);
+    if (event.target.value) {
+      url.searchParams.set("search", event.target.value);
+    } else {
+      url.searchParams.delete("search");
+    }
+    setValue(event.target.value);
+    debounceSetQuery(url);
   }
 
+  const debounceSetQuery = useMemo(() => debounce(push, 300), []);
+
   const foundPatterns = patterns.filter(({ title }) => {
-    if (!router.query.search) {
+    if (!query?.search) {
       return true;
     }
-    return title.toLowerCase().includes(router.query.search?.toLowerCase());
+    return title.toLowerCase().includes(query.search?.toLowerCase());
   });
 
   return (
@@ -33,21 +43,28 @@ export default function Home({ patterns }) {
       <header className="header">
         <div className="wrapper">
           <h1 className={styles.title}>URL Patterns</h1>
-          <form onSubmit={onSubmit}>
-            <input type="search" placeholder="Search here" className={styles.search} />
-            <button>Search</button>
-          </form>
+          <input type="search" onChange={onInput} value={value} placeholder="Search here" className={styles.search} />
+          <div className={styles.description}>
+            {patterns.length} patterns available, including products like <Link href="/?search=Jira">Jira</Link>,{" "}
+            <Link href="/?search=GitHub">GitHub</Link>, <Link href="/?search=Google">Google</Link>
+          </div>
         </div>
       </header>
 
       <div className="wrapper">
-        {foundPatterns.length} patterns available
         <div className={styles.patterns}>
           {foundPatterns.slice(0, 50).map((pattern) => {
             return (
-              <Link href={`/pattern/${pattern.id}`} className={styles.patternBox} key={pattern.id}>
-                {pattern.title}
-              </Link>
+              <div className={styles.patternBox} key={pattern.id}>
+                <Link href={`/pattern/${pattern.id}`}>{pattern.title}</Link>
+              </div>
+            );
+          })}
+          {foundPatterns.slice(0, 50).map((pattern) => {
+            return (
+              <div className={styles.patternBox} key={pattern.id}>
+                <Link href={`/pattern/${pattern.id}`}>{pattern.title}</Link>
+              </div>
             );
           })}
         </div>
