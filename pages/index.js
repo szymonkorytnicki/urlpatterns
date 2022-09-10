@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { debounce } from "../utils/debounce";
 import { useEffect, useMemo, useState } from "react";
+import { FaGithub, FaGoogle, FaJira } from "react-icons/fa";
+
 export default function Home({ patterns }) {
   const { query, push } = useRouter();
   const [value, setValue] = useState();
@@ -45,8 +47,10 @@ export default function Home({ patterns }) {
           <h1 className={styles.title}>URL Patterns</h1>
           <input type="search" onChange={onInput} value={value} placeholder="Search here" className={styles.search} />
           <div className={styles.description}>
-            {patterns.length} patterns available, including products like <Link href="/?search=Jira">Jira</Link>,{" "}
-            <Link href="/?search=GitHub">GitHub</Link>, <Link href="/?search=Google">Google</Link>
+            {patterns.length} patterns available, including products like <FaJira />
+            <Link href="/?search=Jira">Jira</Link>, <FaGithub /> <Link href="/?search=GitHub">GitHub</Link>,{" "}
+            <FaGoogle />
+            <Link href="/?search=Google">Google</Link>
           </div>
         </div>
       </header>

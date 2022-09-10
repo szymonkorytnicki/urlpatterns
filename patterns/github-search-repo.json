@@ -1,6 +1,6 @@
 {
   "title": "Search inside a GitHub repo",
-  "url": "https://github.com/{user}/{repo}/search?q={query}",
+  "url": "https://github.com/${user}/${repo}/search?q=${query}",
   "description": "Search a GitHub repo for a query",
   "tags": ["GitHub", "productivity", "code"],
   "product": "GitHub"

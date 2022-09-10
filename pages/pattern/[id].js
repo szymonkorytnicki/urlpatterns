@@ -1,7 +1,11 @@
 import Head from "next/head";
 import { getAllPatterns } from "../../getAllPatterns";
 import styles from "../../styles/Home.module.css";
+import * as DropdownMenu from "../../dropdown/Dropdown";
+import { FaClipboard, FaNodeJs, FaHatCowboy } from "react-icons/fa";
+
 import Link from "next/link";
+import { useState } from "react";
 export default function Pattern({ title, id, tags, url, description }) {
   return (
     <div>
@@ -26,9 +30,61 @@ export default function Pattern({ title, id, tags, url, description }) {
 
 function URLPattern({ url }) {
   return (
-    <div styles={styles.urlpattern}>
+    <div className={styles.urlpattern}>
       <input type="text" value={url} readOnly className={styles.urlpatternInput} />
+      <CopyButton url={url} />
     </div>
+  );
+}
+
+function CopyButton({ url }) {
+  const [copyValue, setCopyValue] = useState("Copy");
+  function onCopy() {
+    setCopyValue("Copied!");
+    setTimeout(() => {
+      setCopyValue("Copy");
+    }, 1500);
+  }
+  return (
+    <DropdownMenu.Root>
+      <DropdownMenu.Trigger>
+        <FaClipboard />
+        {copyValue}
+      </DropdownMenu.Trigger>
+
+      <DropdownMenu.Portal>
+        <DropdownMenu.Content>
+          <DropdownMenu.Label>Choose an option</DropdownMenu.Label>
+          <DropdownMenu.Item
+            onClick={() => {
+              onCopy();
+              navigator.clipboard.writeText(url);
+            }}
+          >
+            <FaClipboard />
+            <DropdownMenu.ItemContent>Copy</DropdownMenu.ItemContent>
+          </DropdownMenu.Item>
+          <DropdownMenu.Item
+            onClick={() => {
+              onCopy();
+              navigator.clipboard.writeText("`" + url + "`");
+            }}
+          >
+            <FaNodeJs />
+            <DropdownMenu.ItemContent>Copy as template string</DropdownMenu.ItemContent>
+          </DropdownMenu.Item>
+          <DropdownMenu.Item
+            onClick={() => {
+              onCopy();
+              navigator.clipboard.writeText(url.replaceAll("$", ""));
+            }}
+          >
+            <FaHatCowboy />
+            <DropdownMenu.ItemContent>Copy for Alfred</DropdownMenu.ItemContent>
+          </DropdownMenu.Item>
+        </DropdownMenu.Content>
+      </DropdownMenu.Portal>
+    </DropdownMenu.Root>
   );
 }
 

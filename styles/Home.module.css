@@ -69,6 +69,10 @@
     cursor: pointer;
 }
 
+.urlpattern {
+    position: relative;
+}
+
 .urlpatternInput {
     width: 100%;
     background: white;
