@@ -1,0 +1,7 @@
+{
+  "title": "Translate on Google Translate",
+  "url": "https://translate.google.com/?sl=${sourceLanguage}&tl=${targetLanguage}&text=${text}&op=translate",
+  "description": "Translate a phrase or a word using Google Translate",
+  "tags": ["google", "translate", "languages", "English", "productivity"],
+  "product": "Google"
+}

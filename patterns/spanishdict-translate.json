@@ -1,7 +1,7 @@
 {
-  "title": "Translate on Google Translate",
+  "title": "Translate from Spanish to English",
   "url": "https://www.spanishdict.com/translate/${query}",
-  "description": "Translate a phrase or a word using Google Translate",
-  "tags": ["google", "translate", "languages", "English", "productivity"],
-  "product": "Google"
+  "description": "Translate from Spanish to English and from English to Spanish.",
+  "tags": ["spanishdict", "translate", "languages", "English", "Spanish", "productivity"],
+  "product": "SpanishDict"
 }

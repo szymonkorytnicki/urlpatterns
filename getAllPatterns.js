@@ -5,6 +5,9 @@ export async function getAllPatterns() {
   const files = await glob("patterns/*.json");
   const patterns = [];
   for (const file of files) {
+    if (file.includes("_")) {
+      continue;
+    }
     const content = await fs.readFile(file);
     patterns.push({
       id: file.replace("patterns/", "").replace(".json", ""),

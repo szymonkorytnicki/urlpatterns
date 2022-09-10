@@ -1,0 +1,7 @@
+{
+  "title": "Search on Twitter",
+  "url": "https://twitter.com/search?q=${query}",
+  "description": "Search on Twitter",
+  "tags": ["twitter", "search"],
+  "product": "Twitter"
+}

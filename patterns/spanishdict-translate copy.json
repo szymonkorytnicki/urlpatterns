@@ -1,7 +1,0 @@
-{
-  "title": "Translate from Spanish to English",
-  "url": "https://www.spanishdict.com/translate/${query}",
-  "description": "Translate from Spanish to English and from English to Spanish.",
-  "tags": ["spanishdict", "translate", "languages", "English", "Spanish", "productivity"],
-  "product": "SpanishDict"
-}

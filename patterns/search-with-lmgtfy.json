@@ -1,0 +1,7 @@
+{
+  "title": "Search with LMGTFY",
+  "url": "https://lmgtfy.app/?q=${query}",
+  "description": "Suggest your friend a very handy service to browse the web",
+  "tags": ["LMGTFY", "fun"],
+  "product": "LMGTFY"
+}

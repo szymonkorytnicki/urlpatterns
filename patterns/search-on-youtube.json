@@ -1,0 +1,7 @@
+{
+  "title": "Search on YouTube",
+  "url": "https://www.youtube.com/results?search_query=${query}",
+  "description": "Search videos on YouTube",
+  "tags": ["fun", "youtube", "google"],
+  "product": "Google"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Locate a point on Google Maps",
+  "url": "https://www.google.com/maps/@${lat},${lon},${zoom}z",
+  "description": "Use 14 for default zoom level.",
+  "tags": ["maps", "google"],
+  "product": "Google"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Watch on YouTube",
+  "url": "https://www.youtube.com/watch?v=${id}",
+  "description": "Watch a video on YouTube. Pass an ID like dQw4w9WgXcQ to see the video",
+  "tags": ["fun", "youtube", "google"],
+  "product": "Google"
+}
