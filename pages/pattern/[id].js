@@ -6,7 +6,7 @@ import { FaClipboard, FaNodeJs, FaHatCowboy } from "react-icons/fa";
 
 import Link from "next/link";
 import { useState } from "react";
-export default function Pattern({ title, id, tags, url, description }) {
+export default function Pattern({ title, id, tags, url, description, productPatterns }) {
   return (
     <div>
       <Head>
@@ -23,6 +23,19 @@ export default function Pattern({ title, id, tags, url, description }) {
       </header>
       <div className="wrapper">
         <p>{description}</p>
+      </div>
+      <div className="wrapper">
+        <h2>Other patterns from this product</h2>
+
+        <div className={styles.patterns}>
+          {productPatterns.slice(0, 50).map((pattern) => {
+            return (
+              <div className={styles.patternBox} key={pattern.id}>
+                <Link href={`/pattern/${pattern.id}`}>{pattern.title}</Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -114,9 +127,10 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const patterns = await getAllPatterns();
   const pattern = patterns.find(({ id }) => id === context.params.id);
+  const productPatterns = patterns.filter(({ product }) => product === pattern.product);
 
   return {
     // Passed to the page component as props
-    props: { ...pattern },
+    props: { ...pattern, productPatterns },
   };
 }

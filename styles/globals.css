@@ -363,6 +363,26 @@ body {
 }
 
 .header {
-  background: rgba(158, 166, 255, 0.841);
-  min-height: 250px;
+  background: #0B438C;
+  color: white;;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+a {
+  color: #0B438C;
+}
+
+.header a {
+  color: white;
+}
+
+:root {
+  --primary: #0B438C;
+  --secondary: #D93223;
+  --subtle: #F2E7DC;
+}
+
+h1, h2, h3 {
+  font-family: Arvo;
 }

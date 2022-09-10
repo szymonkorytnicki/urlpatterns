@@ -17,7 +17,7 @@
 .patternBox {
     border-radius: 10px;
     flex: 100%;
-    background: #d7a0f8;
+    background: var(--secondary);
     display: block;
     padding: 30px;
     color: white;
@@ -47,19 +47,18 @@
     font-family: Arvo;
     font-size: 3rem;
     background: white;
-    border: 10px solid #f4f4f4;
+    border: 10px solid var(--subtle);
     padding: 20px;
     border-radius: 10px;
     width: 100%;
 }
 
 .search:focus {
-    border-color: #f8f8f8;
     outline: 0;
 }
 
 .goBack { 
-    border: 5px solid #f4f4f4;
+    border: 5px solid var(--subtle);
     padding: 10px;
     border-radius: 5px;
     color: white;
@@ -76,12 +75,11 @@
 .urlpatternInput {
     width: 100%;
     background: white;
-    border: 10px solid #f4f4f4;
+    border: 10px solid var(--subtle);
     padding: 20px;
     border-radius: 10px;
     font-family: monospace
 }
 .urlpatternInput:focus {
     outline: none;
-    border-color: #f8f8f8;
 }

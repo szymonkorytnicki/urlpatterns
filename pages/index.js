@@ -47,7 +47,8 @@ export default function Home({ patterns }) {
           <h1 className={styles.title}>URL Patterns</h1>
           <input type="search" onChange={onInput} value={value} placeholder="Search here" className={styles.search} />
           <div className={styles.description}>
-            {patterns.length} patterns available, including products like <FaJira />
+            Supercharge your productivity using shortcuts for popular services. <br />
+            {patterns.length} patterns available. Try <FaJira />
             <Link href="/?search=Jira">Jira</Link>, <FaGithub /> <Link href="/?search=GitHub">GitHub</Link>,{" "}
             <FaGoogle />
             <Link href="/?search=Google">Google</Link>
