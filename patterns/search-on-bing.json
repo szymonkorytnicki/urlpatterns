@@ -1,0 +1,7 @@
+{
+  "title": "Search Bing",
+  "url": "https://www.bing.com/search?q=${query}",
+  "description": "Microsoft's search engine",
+  "tags": ["productivity", "search"],
+  "product": "Microsoft"
+}

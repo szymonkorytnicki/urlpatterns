@@ -1,0 +1,7 @@
+{
+  "title": "Search Wikipedia article",
+  "url": "https://${version}.wikipedia.org/w/index.php?fulltext=1&search=${query}&ns0=1",
+  "description": "Use en for version if you look for English wiki.",
+  "tags": ["education", "search"],
+  "product": "Wikipedia"
+}

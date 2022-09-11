@@ -1,0 +1,7 @@
+{
+  "title": "Search DuckDuckGo",
+  "url": "https://duckduckgo.com/?q=${query}",
+  "description": "Search on world's famous search enginge with a duck in the logo",
+  "tags": ["productivity", "search"],
+  "product": "DuckDuckGo"
+}

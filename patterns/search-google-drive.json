@@ -1,0 +1,7 @@
+{
+  "title": "Search Google Drive",
+  "url": "https://drive.google.com/drive/search?q=${query}",
+  "description": "Search Google Drive for files or directories.",
+  "tags": ["drive", "google", "search"],
+  "product": "Google"
+}

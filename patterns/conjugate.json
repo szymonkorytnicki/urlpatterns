@@ -1,0 +1,7 @@
+{
+  "title": "Conjugate a verb",
+  "url": "https://www.the-conjugation.com/${language}/verb/${query}.php",
+  "description": "Conjugate verbs in various languages, including German, French and Spanish. Insert a verb and a language.",
+  "tags": ["translate", "languages", "English", "Spanish", "learning", "conjugate", "productivity"],
+  "product": "The Conjugation"
+}

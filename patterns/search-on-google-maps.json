@@ -1,0 +1,7 @@
+{
+  "title": "Search on Google Maps",
+  "url": "https://www.google.pl/maps/search/${query}",
+  "description": "Search on Google Maps for a city, service or anything you like.",
+  "tags": ["maps", "google", "search"],
+  "product": "Google"
+}

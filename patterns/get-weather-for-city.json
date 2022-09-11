@@ -1,0 +1,7 @@
+{
+  "title": "Get weather",
+  "url": "https://www.accuweather.com/en/search-locations?query=${place}",
+  "description": "Type your city or place name. If it's popular enough, you'll be redirected to the result instantly.",
+  "tags": ["weather"],
+  "product": "Accuweather"
+}

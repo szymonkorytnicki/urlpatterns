@@ -1,0 +1,7 @@
+{
+  "title": "Get weather on Google",
+  "url": "https://www.google.com/search?q=weather+${place}",
+  "description": "Search for weather on Google.",
+  "tags": ["weather"],
+  "product": "Google"
+}

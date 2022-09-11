@@ -1,0 +1,7 @@
+{
+  "title": "Search GMail",
+  "url": "https://mail.google.com/mail/u/0/#search/${query}",
+  "description": "Search your inbox, but remember about GMail superpowers when searching (tip: use modifiers like from: or in:trash)",
+  "tags": ["mail", "productivity", "search"],
+  "product": "Google"
+}

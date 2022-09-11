@@ -1,0 +1,7 @@
+{
+  "title": "See airport traffic",
+  "url": "https://www.flightradar24.com/data/airports/${code}",
+  "description": "Get airport details and traffic from Flightradar. Insert three letter code of your airport (GDN, WAW, LHR)",
+  "tags": ["flight", "travel", "traffic", "space"],
+  "product": "Flightradar"
+}
