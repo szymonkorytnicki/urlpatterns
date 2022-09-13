@@ -1,0 +1,7 @@
+{
+  "title": "Get time difference between two places",
+  "url": "https://24timezones.com/difference/${placeA}/${placeB}",
+  "description": "Get time and timezone information and difference for two places (cities, countries, states).",
+  "tags": ["time", "travel", "space"],
+  "product": "24timezones"
+}

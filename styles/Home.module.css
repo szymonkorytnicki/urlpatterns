@@ -1,7 +1,12 @@
 .title {
     text-align: center;
     font-family: Arvo;
-    font-size: 5rem;
+    font-size: 3.5rem;
+}
+@media screen and (min-width:768px) {
+    .title {
+        font-size: 5rem;
+    }
 }
 
 .subtitle {
@@ -25,6 +30,7 @@
     font-weight: bold;
     font-family: Arvo;
 }
+
 @media screen and (min-width:768px) {
     .patternBox {
         flex: calc(30% - 10px);

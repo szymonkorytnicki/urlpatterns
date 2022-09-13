@@ -1,0 +1,7 @@
+{
+  "title": "Get time in city or country",
+  "url": "https://time.is/${place}",
+  "description": "Get time and timezone information for a place (city, country, state).",
+  "tags": ["time", "travel", "space"],
+  "product": "Time.is"
+}

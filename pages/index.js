@@ -57,6 +57,17 @@ export default function Home({ patterns }) {
       </header>
 
       <div className="wrapper">
+        <div className="sponsoredby">
+          URLPatterns is sponsored by{" "}
+          <a href="https://marketplace.atlassian.com/apps/1228725/interesting-links?tab=overview&hosting=cloud">
+            Project Bookmarks for Jira
+          </a>
+          . <br />
+          Boost productivity of your team with configurable, dynamic bookmarks!
+        </div>
+      </div>
+
+      <div className="wrapper">
         <div className={styles.patterns}>
           {foundPatterns.slice(0, 50).map((pattern) => {
             return (

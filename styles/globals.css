@@ -386,3 +386,10 @@ a {
 h1, h2, h3 {
   font-family: Arvo;
 }
+
+.sponsoredby {
+  background: var(--subtle);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}

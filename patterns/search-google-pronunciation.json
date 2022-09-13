@@ -1,0 +1,7 @@
+{
+  "title": "Get English pronunciation",
+  "url": "https://www.google.com/search?q=pronounce+${query}",
+  "description": "English word pronunciation in Google with American and British accents",
+  "tags": ["pronunciation", "education", "languages", "productivity", "search"],
+  "product": "Google"
+}
