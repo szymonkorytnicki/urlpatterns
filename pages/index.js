@@ -39,7 +39,7 @@ export default function Home({ patterns }) {
     <>
       <Head>
         <title>URLPatterns</title>
-        <meta name="description" content="URL Patterns" />
+        <meta name="description" content="URL Patterns allow you to customise the URL" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="header">

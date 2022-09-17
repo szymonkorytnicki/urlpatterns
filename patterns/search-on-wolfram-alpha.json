@@ -1,0 +1,7 @@
+{
+  "title": "Search on Wolfram Alpha",
+  "url": "https://www.wolframalpha.com/input?i=${input}",
+  "description": "Wolfram Alpha is very cool computational engine. Input your query and it will try to interpret what you mean.",
+  "tags": ["wolframalpha", "search", "data"],
+  "product": "Wolfram Alpha"
+}

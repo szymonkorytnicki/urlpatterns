@@ -6,12 +6,13 @@ import { FaClipboard, FaNodeJs, FaHatCowboy } from "react-icons/fa";
 
 import Link from "next/link";
 import { useState } from "react";
-export default function Pattern({ title, id, tags, url, description, productPatterns }) {
+export default function Pattern({ title, id, tags, url, product, description, productPatterns }) {
   return (
     <div>
       <Head>
-        <title>URLPatterns</title>
-        <meta name="description" content="URL Patterns" />
+        <title>URLPatterns for {product}</title>
+        <meta name="description" content={`URL Patterns - ${product} - ${description}`} />
+        <meta name="keywords" content={`URL Patterns, ${product}, ${tags.join(", ")}`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="header">
@@ -25,7 +26,7 @@ export default function Pattern({ title, id, tags, url, description, productPatt
         <p>{description}</p>
       </div>
       <div className="wrapper">
-        <h2>Other patterns from this product</h2>
+        <h2>Other patterns from {product}</h2>
 
         <div className={styles.patterns}>
           {productPatterns.slice(0, 50).map((pattern) => {
