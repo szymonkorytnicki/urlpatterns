@@ -50,7 +50,7 @@ export default function ProductPage({ patterns, productName, productNames }) {
       </header>
 
       <div className="wrapper">
-        <nav aria-label="Breadcrumb" class={styles.breadcrumb}>
+        <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
           <ul>
             <li>
               <a href={`/`}>All patterns</a>

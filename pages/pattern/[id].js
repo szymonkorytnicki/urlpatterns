@@ -26,7 +26,7 @@ export default function Pattern({ title, id, tags, url, product, description, pr
         <p>{description}</p>
       </div>
       <div className="wrapper">
-        <nav aria-label="Breadcrumb" class={styles.breadcrumb}>
+        <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
           <ul>
             <li>
               <a href={`/`}>All patterns</a>
