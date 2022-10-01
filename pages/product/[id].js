@@ -50,6 +50,14 @@ export default function ProductPage({ patterns, productName, productNames }) {
       </header>
 
       <div className="wrapper">
+        <nav aria-label="Breadcrumb" class={styles.breadcrumb}>
+          <ul>
+            <li>
+              <a href={`/`}>All patterns</a>
+            </li>
+            <li aria-current="page">{productName}</li>
+          </ul>
+        </nav>
         <div className={styles.patterns}>
           {foundPatterns.slice(0, 50).map((pattern) => {
             return (

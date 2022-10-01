@@ -26,6 +26,19 @@ export default function Pattern({ title, id, tags, url, product, description, pr
         <p>{description}</p>
       </div>
       <div className="wrapper">
+        <nav aria-label="Breadcrumb" class={styles.breadcrumb}>
+          <ul>
+            <li>
+              <a href={`/`}>All patterns</a>
+            </li>
+            <li>
+              <a href={`/product/${product.toLowerCase()}`}>{product}</a>
+            </li>
+            <li>
+              <span aria-current="page">This pattern</span>
+            </li>
+          </ul>
+        </nav>
         <h2>Other patterns from {product}</h2>
 
         <div className={styles.patterns}>

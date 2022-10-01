@@ -7,7 +7,7 @@ import { debounce } from "../utils/debounce";
 import { useEffect, useMemo, useState } from "react";
 import { FaGithub, FaGoogle, FaJira } from "react-icons/fa";
 
-export default function Home({ patterns }) {
+export default function Home({ patterns, products }) {
   const { query, push } = useRouter();
   const [value, setValue] = useState();
 
@@ -78,6 +78,18 @@ export default function Home({ patterns }) {
           })}
         </div>
       </div>
+      <div className="wrapper">
+        <div className={styles.patterns}>
+          {/** TODO more semantic class*/}
+          {products.map((product) => {
+            return (
+              <div className={styles.productBox} key={product}>
+                <Link href={`/product/${product.toLowerCase()}`}>{product}</Link>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 }
@@ -87,6 +99,12 @@ export async function getStaticProps() {
   return {
     props: {
       patterns: patterns.map(({ id, title }) => ({ id, title })),
+      products: Array.from(
+        patterns.reduce((acc, pattern) => {
+          acc.add(pattern.product);
+          return acc;
+        }, new Set())
+      ),
     },
   };
 }
