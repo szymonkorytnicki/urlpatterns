@@ -1,0 +1,7 @@
+{
+  "title": "Get facebook profile URL",
+  "url": "https://www.facebook.com/${username}",
+  "description": "Get facebook profile URL",
+  "tags": ["facebook", "profile", "url"],
+  "product": "Facebook"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "English pronunciation",
+  "url": "https://dictionary.cambridge.org/pronunciation/english/${word}",
+  "description": "See a Cambridge English pronunciation for a word",
+  "tags": ["pronunciation", "english", "cambridge"],
+  "product": "Cambridge Dictionary"
+}

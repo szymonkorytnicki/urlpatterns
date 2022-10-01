@@ -121,3 +121,23 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+// - [ ]
+// - [ ]
+// - [ ]
+// - [ ] wikiquote
+// - [ ] wiktionary
+// - [ ] https://drive.google.com/drive/search?q=test
+// - [ ]
+// - [ ] https://www.youtube.com/c/battlebots
+// - [ ] https://www.google.pl/search?q=test&tbm=isch
+// - [ ] https://pixabay.com/images/search/test/?manual_search=1
+// - [ ] https://aqicn.org/search/#q=gdansk
+// - [ ] https://fonts.google.com/?preview.text=test&preview.text_type=custom
+// - [ ] lookup book by isbn
+// - [ ] https://www.zillow.com/homes/for_sale/ny/
+// - [ ] https://www.zillow.com/homes/for_rent/ny/
+// - [ ]
+// - [ ] https://twitter.com/intent/tweet?text=Hello%20world
+// - [ ] https://www.duolingo.com/profile/SzymonK
+// - [ ] https://duome.eu/SzymonK

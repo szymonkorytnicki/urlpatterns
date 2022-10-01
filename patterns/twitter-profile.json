@@ -1,0 +1,7 @@
+{
+  "title": "Twitter profile",
+  "url": "https://twitter.com/${username}",
+  "description": "Twitter profile of ${username}",
+  "tags": ["twitter", "social network"],
+  "product": "Twitter"
+}

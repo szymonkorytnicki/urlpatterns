@@ -1,0 +1,7 @@
+{
+  "title": "Search for a book on The Story Graph",
+  "url": "https://app.thestorygraph.com/browse?search_term=${query}",
+  "description": "Search for a book on The Story Graph, great library of books and authors",
+  "tags": ["books", "authors", "library", "search"],
+  "product": "The Story Graph"
+}
